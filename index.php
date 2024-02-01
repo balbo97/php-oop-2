@@ -76,5 +76,21 @@ class ProdottoAlimentare extends Prodotto {
     }
 }
 
+// creazione di categorie 
+$categoriaCane = new Categoria ('Cane');
+$categoriaGatto = new Categoria ('Gatto');
+$categoriaUccello = new Categoria ('Uccello');
+$categoriaPesce = new Categoria ('Pesce');
+
+// creazione di prodotti
+$prodottoCiboCane = new ProdottoAlimentare("Royal Canin Mini Adult", 20.99, $categoriaCane, "https://arcaplanet.vtexassets.com/arquivos/ids/284621/Mini-Adult.jpg?v=638182891693570000");
+$prodottoCiboGatto = new ProdottoAlimentare("Almo Nature Holistic Maintenance Medium Large Tonno e Riso", 15.99, $categoriaGatto, "https://arcaplanet.vtexassets.com/arquivos/ids/245173/almo-nature-holistic-cane-adult-medium-pollo-e-riso.jpg");
+$prodottoCiboGattoLattina = new ProdottoAlimentare("Almo Nature Cat Daily Lattina", 1.99, $categoriaGatto, "https://arcaplanet.vtexassets.com/arquivos/ids/245336/almo-daily-menu-cat-400-gr-vitello.jpg");
+$prodottoCiboPesci = new ProdottoAlimentare("Mangime per Pesci Guppy in Fiocchi", 7.99, $categoriaPesci, "https://arcaplanet.vtexassets.com/arquivos/ids/272714/tetra-guppy-mini-flakes.jpg");
+$prodottoAccessorioUccelli = new ProdottoAccessorio("Voliera Wilma in Legno", 89.99, $categoriaUccelli, "https://arcaplanet.vtexassets.com/arquivos/ids/258384/voliera-wilma1.jpg");
+$prodottoAccessorioPesci = new ProdottoAccessorio("Cartucce Filtranti per Filtro EasyCrystal", 12.99, $categoriaPesci, "https://arcaplanet.vtexassets.com/arquivos/ids/272741/tetra-easycrystal-filterpack-250-300.jpg");
+$prodottoGiocoCane = new ProdottoGioco("Kong Classic", 15.99, $categoriaCane, "https://arcaplanet.vtexassets.com/arquivos/ids/256599/kong-classic1.jpg");
+$prodottoGiocoGatto = new ProdottoGioco("Topini di peluche Trixie", 7.99, $categoriaGatto, "https://arcaplanet.vtexassets.com/arquivos/ids/223852/trixie-gatto-gioco-active-mouse-peluche.jpg");
+
 ?>
 
